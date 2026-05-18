@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.history/
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# 임시 / 백업 파일
+*.bak
+*.tmp
+*.log
+*.orig
+
+# 마크다운 도구 산출물
+.markdownlint-cli2.jsonc.bak
+node_modules/
+
+# Claude Code 로컬 설정 (공유용 settings.json은 추적, 개인용은 제외)
+.claude/settings.local.json
