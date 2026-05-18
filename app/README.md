@@ -30,7 +30,13 @@ npm install
 ```
 app/
 ├── src/
-│   └── hello-agent.test.ts  # createDeepAgent 통합 테스트
+│   ├── invoke.test.ts       # 환경 변수 + 기본 invoke
+│   ├── memory.test.ts       # MemorySaver + thread_id 멀티턴/격리
+│   ├── tools.test.ts        # 커스텀 tool / write_todos / subagent
+│   ├── streaming.test.ts    # agent.stream() updates / messages 모드
+│   ├── interrupt.test.ts    # interruptOn 으로 HITL approve/reject
+│   ├── structured.test.ts   # responseFormat + providerStrategy(zod)
+│   └── filesystem.test.ts   # write_file / read_file 내장 도구
 ├── .env.example
 ├── package.json
 ├── tsconfig.json
