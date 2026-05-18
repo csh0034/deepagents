@@ -4,7 +4,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 리포지토리 성격
 
-이 저장소는 **LangChain Deep Agents 공식 문서의 한국어 번역본**만 담고 있는 문서 전용(documentation-only) 리포지토리입니다. 번역 문서는 모두 `docs/` 디렉터리의 마크다운 파일로 관리됩니다.
+이 저장소는 **LangChain Deep Agents 공식 문서의 한국어 번역본**(`docs/`)과, 해당 라이브러리를 직접 다뤄 보기 위한 **TypeScript POC 코드**(`app/`)를 함께 담고 있습니다. 번역 문서는 모두 `docs/` 디렉터리의 마크다운 파일로 관리됩니다.
+
+### 디렉터리 구조
+
+```
+deepagents/
+├── docs/        # 한국어 번역 문서 (NN_deepagents_<topic>_ko.md)
+├── app/         # deepagents(TS) 기반 샘플/POC 코드
+├── index.html   # GitHub Pages 치트시트
+├── README.md
+└── CLAUDE.md
+```
 
 `docs/` 안의 파일은 `NN_deepagents_<topic>_ko.md` 형식이며, 번호(`NN`)는 **공식 문서 사이드바 메뉴 순서**(https://docs.langchain.com/oss/python/deepagents/overview 기준)를 따릅니다.
 
@@ -36,3 +47,4 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **새 문서 번역 추가**: `docs/NN_<topic>_ko.md` 패턴으로 파일을 만들고, 첫 줄에 `# 제목`, 그 다음 `> 원문: <URL>` 인용 블록, 그리고 `---` 구분선으로 시작합니다.
 - **기존 문서 일부 갱신**: 해당 섹션만 편집하되, 목차/앵커 일관성을 검증하세요.
 - **문서 간 상호 참조**: 같은 저장소 내 다른 번역 문서를 참조할 때는 같은 `docs/` 디렉터리 안에서 상대 경로(예: `./03_deepagents_customization_ko.md`)로 링크합니다. `README.md`/`index.html` 등 루트에서 참조할 때는 `./docs/NN_...` 형태를 씁니다.
+- **`app/` POC 코드 작업**: TypeScript 기반 deepagents 샘플은 `app/` 디렉터리에서 다룹니다. 사용법은 `app/README.md`를 참고하세요.

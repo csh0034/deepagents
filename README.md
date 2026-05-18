@@ -10,6 +10,10 @@
 
 핵심 기능 11가지 · 하니스 구조 · `create_deep_agent()` 파라미터 · 컨텍스트 엔지니어링 5계층 · 백엔드 비교 · 운영 노하우를 한 페이지에 압축했습니다.
 
+## 🛠️ TypeScript POC (`app/`)
+
+`deepagents` npm 패키지를 직접 굴려보는 샘플 코드가 [`app/`](./app/) 에 있습니다. 셋업·실행·테스트 방법은 [`app/README.md`](./app/README.md) 를 참고하세요.
+
 ## 📚 번역 문서
 
 파일은 [`docs/`](./docs/) 디렉터리 아래에 `NN_deepagents_<topic>_ko.md` 형식으로 있으며, 번호(`NN`)는 [공식 사이드바 메뉴 순서](https://docs.langchain.com/oss/python/deepagents/overview)를 따릅니다.
