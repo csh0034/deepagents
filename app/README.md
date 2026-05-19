@@ -39,7 +39,11 @@ app/
 │   ├── filesystem.test.ts         # write_file / read_file 내장 도구
 │   ├── permissions.test.ts        # FilesystemPermission allow/deny
 │   ├── parallel-subagents.test.ts # 동일 turn 에서 task 도구 병렬 발사
-│   └── skills.test.ts             # SKILL.md frontmatter 파싱 + skills 옵션 통합
+│   ├── skills.test.ts             # SKILL.md frontmatter 파싱 + skills 옵션 통합
+│   ├── summarization.test.ts      # createSummarizationMiddleware — model 에 주는 messages 자동 압축
+│   ├── backend-composite.test.ts  # CompositeBackend 로 /disk/* → FilesystemBackend, 그 외 → StateBackend
+│   ├── fs-extra-tools.test.ts     # ls / glob / grep / edit_file 내장 파일 도구 통합
+│   └── patch-tool-calls.test.ts   # wrapToolCall 훅으로 도구 인자 mid-flight 패치
 ├── test-skills/
 │   └── korean-greeting/
 │       └── SKILL.md               # Agent Skills 스펙 fixture
