@@ -34,9 +34,11 @@ app/
 │   ├── memory.test.ts       # MemorySaver + thread_id 멀티턴/격리
 │   ├── tools.test.ts        # 커스텀 tool / write_todos / subagent
 │   ├── streaming.test.ts    # agent.stream() updates / messages 모드
-│   ├── interrupt.test.ts    # interruptOn 으로 HITL approve/reject
-│   ├── structured.test.ts   # responseFormat + providerStrategy(zod)
-│   └── filesystem.test.ts   # write_file / read_file 내장 도구
+│   ├── interrupt.test.ts          # interruptOn 으로 HITL approve/reject
+│   ├── structured.test.ts         # responseFormat + providerStrategy(zod)
+│   ├── filesystem.test.ts         # write_file / read_file 내장 도구
+│   ├── permissions.test.ts        # FilesystemPermission allow/deny
+│   └── parallel-subagents.test.ts # 동일 turn 에서 task 도구 병렬 발사
 ├── .env.example
 ├── package.json
 ├── tsconfig.json
