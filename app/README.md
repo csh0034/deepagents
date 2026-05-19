@@ -38,7 +38,11 @@ app/
 │   ├── structured.test.ts         # responseFormat + providerStrategy(zod)
 │   ├── filesystem.test.ts         # write_file / read_file 내장 도구
 │   ├── permissions.test.ts        # FilesystemPermission allow/deny
-│   └── parallel-subagents.test.ts # 동일 turn 에서 task 도구 병렬 발사
+│   ├── parallel-subagents.test.ts # 동일 turn 에서 task 도구 병렬 발사
+│   └── skills.test.ts             # SKILL.md frontmatter 파싱 + skills 옵션 통합
+├── test-skills/
+│   └── korean-greeting/
+│       └── SKILL.md               # Agent Skills 스펙 fixture
 ├── .env.example
 ├── package.json
 ├── tsconfig.json
